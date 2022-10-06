@@ -147,6 +147,21 @@ body {
 
 }
 
+/* LOADER */
+.loader {
+    border: .1rem solid  var(--green);
+    border-top: .1rem solid var(--darkred);
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
 /* SLIDER */
 .slide-container {
   display: flex;
@@ -320,7 +335,7 @@ body {
   padding: 1rem 1.5rem;
   border-radius: .5rem;
   cursor: pointer;
-  background-color: aqua;
+  background-color: rgb(121, 244, 186);
 }
 
 @media screen and (min-width: 768px) {
