@@ -7,7 +7,6 @@ const panels = document.querySelectorAll('.info-bar-panel');
 navBtn.forEach(btns => {
 
   btns.addEventListener('click', (e) => {
-    console.log(e.target)
     const pics = document.querySelectorAll(".slider");
     e.target.classList.toggle('act')
     img = e.target.id
